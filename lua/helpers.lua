@@ -12,7 +12,8 @@ local function open_vsplit_window()
 end
 
 local function open_hsplit_window()
-  vim.api.nvim_command('new')
+  vim.api.nvim_command('belowright new')
+  vim.api.nvim_command('resize -15')
 end
 
 local function open_editor_relative_window()
